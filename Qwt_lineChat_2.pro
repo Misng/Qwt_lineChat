@@ -9,5 +9,4 @@ HEADERS += \
     mainwidget.h
 
 
-INCLUDEPATH += $$PWD/../API/QtDemo/Linux32
-DEPENDPATH += $$PWD/../API/QtDemo/Linux32
+include(./COM/COM.pri)

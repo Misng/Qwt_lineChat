@@ -26,7 +26,7 @@ public:
     virtual QwtText label(double v) const//这个v可能和数字类型的engine算出来的v不相同,   v相同，不同的是，v的基数为 QDateTime::currentDateTime().toTime_t()的返回值
     {
          QTime upTime = baseTime.addSecs(static_cast<int>(v));
-         return upTime.toString("mm:ss");
+         return upTime.toString("hh:mm:ss");
     }
 
 private:
