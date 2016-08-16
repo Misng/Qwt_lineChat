@@ -49,7 +49,7 @@ MainWidget::MainWidget(QWidget *parent) :
 
 }
 
-void MainWidget::timerEvent(QTimerEvent *e)
+void MainWidget::timerEvent(QTimerEvent *)
 {
     //设置刻度范围
     qwt->setAxisScale(QwtPlot::xBottom,Current_time_t-50,Current_time_t,5);

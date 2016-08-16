@@ -1,12 +1,13 @@
 SOURCES += \
     main.cpp \
-#    cpuplot.cpp
     mainwidget.cpp
 
-
-LIBS += -L C:/mingw/bin -lqwtd
+LIBS += -L/usr/lib/lib -lqwt
 
 HEADERS += \
-#    cpuplot.h
     timescaledraw.h \
     mainwidget.h
+
+
+INCLUDEPATH += $$PWD/../API/QtDemo/Linux32
+DEPENDPATH += $$PWD/../API/QtDemo/Linux32
